@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transistions in CSS</title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        h1 {
+            text-align: center;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #box{
+            border: 2px solid blue;
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            display: block;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            /* /* transition-property: background-color; */
+            /* transition-duration: 2s; */
+            /* transition-timing-function: ease-in-out; */
+            /* transition-delay: 4s;  */
+
+            /* transition short hand property in one line  */
+            /* transition: transition-property : transition-duration : transition-timing-function : transition-delay */
+            /* transition: background-color 2s ease-in-out 4s ; */
+            transition: all background-color 4s ease-in 1s ;
+            
+
+            
+        }
+        #box:hover{
+            border: 5px solid blueviolet;
+            background-color: red;
+            border-radius: 50px;
+            height: 500px;
+            width: 500px;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Transistions Property</h1>
+    <div class="container">
+        <div id="box">
+            Anant Shree
+        </div>
+    </div>
+</body>
+
+</html>

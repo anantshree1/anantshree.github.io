@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai+2|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="1.css">
+    <title>forms</title>
+</head>
+<body>
+    <form action="backend.php" class="form">
+        <label for="name"></label> Name: <input type="text" placeholder="Enter Your Name" class="form" id="name"><br><br>
+        <label for="email"></label> Email: <input type="text" name="My Email" placeholder="Enter Your E-mail" class="form" id="email"><br><br>
+        <label for="phoneno."></label> Phone No. <input type="number"placeholder="Enter Your Phone No." class="form" id="phoneno."><br><br>
+        <label for="date"></label> Date: <input type="date" class="form" id="date"><br><br>
+        <label for="gender"></label> Gender: <input type="radio" name="gender">Male <input type="radio" name="gender" class="form" id="gender">Female <br><br>
+        <label for="bio"></label> Write about Yourself- <br>
+        <textarea name="Write about Yourself" id="bio" cols="30" rows="10" class="form" ></textarea><br><br>
+        <label for="car"></label> 
+        <select name="car" id="car">
+            <option value="car">Swift</option>
+            <option value="car">Renault</option>
+            <option value="car">Lamborghini</option>
+            <option value="car">Ferrari</option>
+            <option value="car" selected>Alto</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit Now" id="submit">
+        <input type="reset" id="reset">
+
+    </form>
+</body>
+</html>
